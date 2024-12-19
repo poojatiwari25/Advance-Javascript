@@ -1,0 +1,16 @@
+When we use static keyword with any method then for calling we have to use its classname means classname.methodname
+<script>
+class Demo{
+	static show(){
+		console.log('static show is running');
+	}
+	display(){
+		console.log('display is running');
+	}
+}
+var d= new Demo();
+// d.show();
+Demo.show();
+// Demo.display();
+d.display();
+</script>

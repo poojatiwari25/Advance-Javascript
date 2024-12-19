@@ -1,0 +1,28 @@
+<script type="text/javascript" src="calc.js"></script>
+<script>
+class Scalculator extends Calculator{
+   square(n){
+   	console.log('square is',n*n);
+   }
+   factorial(n){
+   	var f=1;
+   	for( var i=1;i<=n;i++){
+   		f=f*i;
+   	}
+   	console.log('factorial  of' ,n, 'is' ,f);
+   }	 
+}
+class Demo extends Scalculator{
+	show(){
+		console.log('show is running');
+	}
+}
+var d = new Demo();
+d.show();
+d.square(5);
+d.factorial(5);
+d.add(20,10);
+d.sub(20,10);
+d.mul(20,10);
+d.div(20,10);
+</script>

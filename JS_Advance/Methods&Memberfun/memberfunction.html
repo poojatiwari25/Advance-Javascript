@@ -1,0 +1,19 @@
+<script>
+class Demo{
+	show(n){
+		console.log('cube is',n*n*n);
+	}
+	factorial(n){
+		var f=1;
+		for(var i=1;i<=n;i++){
+			f=f*i;
+		}
+		return f;
+	}
+}
+var d= new Demo();
+d.show(5);
+var t = d.factorial(5);
+console.log(t);
+console.log(d.factorial(6));
+</script>

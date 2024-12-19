@@ -1,0 +1,15 @@
+<script>
+class Dummy{
+	constructor(){
+		console.log('constructor is running from dummy');
+	}
+}
+class Demo extends Dummy{
+	constructor(){
+		super();
+		console.log('constructor is running from Demo');
+	}
+}
+var d = new Demo();
+
+</script>

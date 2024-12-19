@@ -1,0 +1,11 @@
+<script>
+function show(){
+	a=10;
+    function inner(){
+    	return a;
+    }
+    return inner;
+}
+var t = show();
+console.log(t());
+</script>

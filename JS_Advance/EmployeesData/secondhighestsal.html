@@ -1,0 +1,38 @@
+<script>
+var ary=[];
+class Emp{
+	constructor(empno,name,sal){
+		this.empno=empno;
+		this.name=name;
+		this.sal=sal;
+	}
+	show(){
+		console.log(this.empno,this.name,this.sal);
+	}
+}
+var t =parseInt(prompt('enter total emps'));
+for(var i=1;i<=t;i++){
+	alert("enter details of emp" +i);
+	var eno = parseInt(prompt('enter empno'));
+	var enm = prompt('enter name');
+	var s1 = parseInt(prompt('enter sal'));
+	var e= new Emp(eno,enm,s1);
+	ary.push(e);
+}
+var b=0;
+var c=1;
+var t=undefined;
+for(var i of ary)
+{
+    if(i.sal>b)
+    {
+	c=b;
+	b=i.sal;
+    }
+    else if(i.sal>c){
+    	c=i.sal;
+    	t=i;
+    }
+}
+t.show();
+</script>

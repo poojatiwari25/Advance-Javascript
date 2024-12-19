@@ -1,0 +1,14 @@
+<script>
+class Demo{
+	constructor(){
+		console.log('constructor is running from  demo');
+	}
+}
+Demo.prototype.a=10;
+Demo.prototype.show= function(){
+	console.log('show  is running');
+};
+var d= new Demo();
+console.log(d.a);
+d.show();
+</script>
